@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", "Poppins", "Noto Sans KR", sans-serif;
+}
+
+.izone-section {
+  position: relative;
+}
+
+.izone {
+  overflow: hidden;
+}
+
+.izone-bg {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  object-position: 0% 80%;
+  vertical-align: top;
+  filter: blur(20px);
+}
+
+.izone-section::before {
+  background: rgba(0, 0, 0, .6);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.info-spotify-section {
+  padding-top: 40px;
+}
+
+.info-spoti-flex {
+  display: flex;
+}
+
+.info-padding {
+  padding: 0 15px;
+}
+
+.info-spacing {
+  margin-right: 75px;
+}
+
+.info-line {
+  width: 80px;
+  height: 3px;
+  background-color: #ef539d;
+  margin-top: 20px;
+}
+
+.info-width {
+  max-width: 73%;
+  flex: 73%;
+}
+
+.spoti-width {
+  max-width: 27%;
+  flex: 27%;
+}
+
+.description {
+  margin-top: 20px;
+}
+
+.paragraph-style {
+  text-align: left;
+}
+
+.spoti-padding {
+  padding: 0 15px;
+}
+
+.description p, .maknae-description p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.description a, .maknae-description a {
+  color: #ef539d;
+  text-decoration: none;
+}
+
+.more-text {
+  display: none;
+}
+
+/*  
+.spotify-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+} 
+*/
+
+.spotify {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+  position: relative;
+  white-space: nowrap;
+}
+
+.spotify::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #ef539c5b;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+}
+
+.spotify img {
+  width: 64px;
+  height: 64px;
+  border-radius: 5px;
+}
+
+.spotify p {
+  font-size: 0.85rem;
+}
+
+.spotify-container a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.card-section {
+  padding-top: 40px;
+}
+
+.card-padding {
+  padding: 0px 15px;
+}
+
+.card img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 15px;
+  vertical-align: top;
+}
+
+#sakura, #eunbi, #chaewon, #nako {
+  object-position: 0% 20%;
+}
+
+.card h3 {
+  color: #ffffff;
+}
+
+.card-caption p {
+  font-size: 0.8rem;
+  color: #ffffff;
+}
+
+.card-icon p {
+  font-size: 0.95rem;
+  color: #ffffff;
+}
+
+.card-icon i {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.card-menu i {
+  font-size: 25px;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: calc(33.33% - 20px);
+  max-width: 350px;
+  flex: 1 1 auto;
+  cursor: pointer;
+  position: relative;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.card-caption {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  bottom: 0;
+  padding: 15px 10px;
+  z-index: 1;
+}
+
+.card-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.maknae-section {
+  padding-top: 40px;
+}
+
+.maknae-padding {
+  padding: 0 15px;
+}
+
+
+.maknae-description {
+  margin-top: 20px;
+}

@@ -1,0 +1,13 @@
+@media (min-width: 1200px) {
+  #main .margin-container {
+    max-width: 1130px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .margin-container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}
