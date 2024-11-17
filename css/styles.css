@@ -5,6 +5,10 @@
   font-family: "Raleway", "Poppins", "Noto Sans KR", sans-serif;
 }
 
+#main {
+  margin-bottom: 100px;
+}
+
 .izone-section {
   position: relative;
 }
@@ -23,7 +27,7 @@
 }
 
 .izone-section::before {
-  background: rgba(0, 0, 0, .6);
+  background: rgba(0, 0, 0, .4);
   content: "";
   height: 100%;
   left: 0;
@@ -31,6 +35,56 @@
   top: 0;
   width: 100%;
   z-index: 2;
+}
+
+.about-me-padding {
+  padding: 0 15px;
+}
+
+.about-me {
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+  z-index: 2;
+}
+
+.about-me img {
+  width: 350px;
+  border-radius: 15px;
+}
+
+.name-container {
+  margin-left: 20px;
+}
+
+.name {
+  color: #ffffff;
+}
+
+.follow {
+  display: flex;
+  background-color: #ffffff;
+  color: #ef539d;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 5px 15px;
+  border-radius: 50px;
+  transition: 0.5s;
+}
+
+.follow:hover {
+  opacity: 0.7;
+}
+
+.follow:active {
+  opacity: 0.3;
+}
+
+.follow-container {
+  margin-top: 25px;
 }
 
 .info-spotify-section {
@@ -186,12 +240,18 @@
   flex-wrap: wrap;
 }
 
+.card-container.children-focused > :not(:hover) {
+  opacity: 0.6;
+  transform: scale(0.95);
+}
+
 .card {
   width: calc(33.33% - 20px);
   max-width: 350px;
   flex: 1 1 auto;
   cursor: pointer;
   position: relative;
+  transition: 0.5s;
 }
 
 .card::after {
@@ -240,7 +300,15 @@
   padding: 0 15px;
 }
 
-
 .maknae-description {
   margin-top: 20px;
+}
+
+.portfolio-padding {
+  padding: 40px 15px;
+}
+
+.portfolio-padding a {
+  text-decoration: none;
+  color: #ef539d;
 }
