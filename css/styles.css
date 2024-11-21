@@ -20,6 +20,7 @@
   object-position: 0% 80%;
   vertical-align: top;
   filter: blur(20px);
+  transform: scale(1.1);
 }
 
 .izone-section::before {
